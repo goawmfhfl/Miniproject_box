@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+}
+/* 대쉬보드 */
+body{
+    background-color: rgba(0,0,0,0.6);
+}
+#dashboard{
+    width: 40rem;
+    height: 25rem;
+    margin: 3rem auto;
+    padding: 1rem;
+    border: 1px solid #999;
+    display: flex;
+    border-radius: 30px;
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#left_container{
+    width: 24rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+}
+#right_container{
+    width: 14rem;
+    height: 23rem;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+/* 캘린더 */
+#calendar{
+    height: 14rem;
+    border-top-left-radius: 30px;
+    margin-right: 0.5rem; 
+}
+.c_month{
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: #fff;
+    text-shadow: 0 0.1rem 0.1rem rgba(0,0,0,.5);
+    border-radius: 30px;
+}
+
+.c_month i{
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.c_month h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fff;
+}
+.c_month p{
+    font-size: 0.6rem;
+    color: #fff;
+}
+.c_table{
+    height: 11.5rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* 캘린더 요일부분 */
+.c_head{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c_head th{
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    width: calc(24rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.1rem 0.1rem rgba(0,0,0,.5);
+}
+.c_body{
+    height: 9.5rem;
+}
+.c_body tr{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* 
+크기에 딱 맞추는 방법이 뭐가 있을까 ?
+꼭 height값을 줘야할까?
+나는 지금 전체적으로 height값을 넣어서 크기를 조정했다
+하지만 이 방법은 별로 적절해보이지 않는다.
+
+분명 반응형 웹사이트를 이와같이 만든다면 문제가 생길것이다.
+그렇다면 이 부분은 어떻게 해결해야할까?
+*/
+.c_body tr td{
+    font-size: 0.8rem;
+    width: calc(25rem/7);
+    height: calc(9.5rem/6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.2rem 0.1rem rgba(0,0,0,.5);
+    border-radius: 50px;
+}
+
+.today{
+    background-color: rgba(15, 97, 142, 0.543);
+    box-shadow: 0rem 0.1rem 0.1rem rgba(0,0,0,.5);
+}
+.day-active{
+    background-color: rgba(0,0,0,.1);
+    box-shadow: 0rem 0.1rem 0.1rem rgba(0,0,0,.5);
+}
+
+
+/* 투두리스트 */
+#todolist{
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.1);
+}
+.input_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.input_container input{
+    padding: 0 2rem;
+}
+.input_container .add_btn{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.list_container{
+    height: 7rem;
+    overflow-y: scroll;
+}
+.todos_ul{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.todos_li{
+    width: 22rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem 0.4rem;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+.memo_box{
+    width: 22rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.memo_box .memo_desc{
+    width: 18rem;
+    margin-left: 5px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.memo_box .delete{
+    color: #fff;
+    cursor: pointer;
+}
+
+/* right_container height: 23rem; */
+/* 오른쪽 첫 번째 박스 */
+.first_box{
+    height: 7rem;
+    border-top-right-radius: 30px;
+}
+.top_inner{
+    display: flex;
+    flex-direction: column;
+}
+.notice_info{
+    height: 3.5rem;
+}
+.notice_watch{
+    display: block;
+    color:#fff;
+    font-size: 1.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    align-items: center;
+}
+
+/* 오른쪽 두 번째 박스 */
+/* height 6rem width 13rem*/
+.second_box{
+    height: 6rem;
+    width: 13rem;
+    border-top: 0.5px solid rgba(250, 250, 250, 0.612);
+    border-bottom: 0.5px solid rgba(250, 250, 250, 0.612);
+}
+.middile_inner{
+    display: flex;
+}
+.notion_png{
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem 0rem;
+    cursor: pointer;
+}
+.notion_box{
+    width: 9.5rem;
+    height: 6rem;
+    padding: 0.5rem;
+    color:#fff;
+}
+.notion_box .update_tit{
+    padding-top: 0.5rem;
+    display: block;
+    font-size: 0.8rem;
+}
+.notion_box .update_desc{
+    display: block;
+    padding-top: 0.3rem;
+    font-size: 0.4rem;
+}
+
+/* 오른쪽 세 번째 박스 */
+.third_box{
+    height: 9rem;
+    border-bottom-right-radius: 30px;
+    padding: 0.5rem;
+}
+
+.bottom_inner{
+    display: flex;
+    flex-direction: column;
+}
+.weather_temp{
+    height: 7rem;
+    display: block;
+    font-size: 5rem;
+    font-weight: normal;
+    color: #fff;
+}
+.weather_place{
+    display: block;
+    height: 2rem;
+    color: #fff;
+}
+
+
+

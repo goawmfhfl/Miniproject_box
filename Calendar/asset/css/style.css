@@ -1,0 +1,505 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    color: #444;
+}
+.inner{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.head_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon_box{
+    display: flex;
+    padding: 0.5rem;
+}
+.icon_box a{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 0.5rem;
+}
+.meiyou{
+    background-color: rgba(255,255,255,0.5);
+}
+.main{
+    margin-top: -170px;
+    width: 100%;
+    height: 500px;
+    background: url(../img/team_img1.jpg) center no-repeat;
+    background-size: cover;
+    transform: skew(0deg,-15deg);
+}
+.main_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+
+}
+.main_title{
+    margin-top: 300px;
+    transform: skew(0deg,15deg);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main_desc{
+    margin-top: 10px;
+    transform: skew(0deg,15deg);
+    color: #fff;
+}
+
+/* 미니 프로젝트 */
+
+.mini_project{
+    position: relative;
+    padding-top: 150px;
+}
+
+/* 미니 프로젝트 - 팀원 소개 영역 */
+.team_container{
+    position: absolute;
+    top: 0; right: 15px;
+    display: flex;
+    padding: 2rem;
+    text-align: center
+}
+.team_container li{
+    margin: 0 1rem;
+}
+
+.team_container li a {
+    position: relative;
+    background-color: #3192bf;
+    border-radius: 50%;
+    width: 3.8rem; height: 3.8rem; color: #fff;
+    display: inline-block;
+    font-size: 3rem;
+    line-height: 3.9rem;
+    transition: all 0.3s ease;
+}
+.team_container li a.C1{
+    background-color: #325288;
+}
+.team_container li a.C2{
+    background-color: #f4eee8;
+}
+.team_container li a.C3{
+    background-color: #f5cebe;
+}
+.team_container li a.C4{
+    background-color: #114e60;
+}
+
+.team_container li a span{
+    position: absolute;
+    left:50%; top: -30px;
+    transform: translateX(-50%);
+    font-size: 12px;
+    line-height: 1.2;
+    background-color: #333;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.8rem 0 0.8rem 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team_container li a span::before{
+    content: '';
+    position: absolute;
+    left: 50%; bottom: -5px;
+    margin-left: -5px;
+    border-top: 5px solid #333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.team_container li a:hover span{
+    opacity: 1;
+    top:-33px; 
+}
+
+/* 미니 프로젝트 - 제목 영역*/
+
+.pj_titlebox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #333;
+}
+.pj_title{
+    margin: 0.5rem;
+
+}
+.pi_arrow_container{
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pj_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 1px solid #333;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+.prev{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cfd8dc;
+}
+.next{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cfd8dc;
+}
+.prev-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(-2px);
+  }
+  
+.next-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(2px);
+  }
+
+/* 미니 프로젝트 - 컨텐츠 영역*/
+
+.pj_content_box{
+    display: flex;
+    margin-top: 1rem;
+    border: 1px solid #333;
+    overflow: hidden;
+}
+.pj_content_box > div:nth-child(1){
+    background: #bdc3c7; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.pj_content_box > div:nth-child(2){
+    background: #108dc7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ef8e38, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.card_project{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-radius: 50px;
+    border-right: 15px solid #000;
+    border-left: 15px solid #000;
+    border-top: 30px solid #000;
+    border-bottom: 15px solid #000;
+    overflow: none;
+}
+.card_project::before{
+    content: '';
+    position: absolute;
+    top: -17px;left: 50px;
+    transform: translateX(50px);
+    width: 50%;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+
+/* 카드 설명글 부분 */
+.intro_mp_box{
+    display: flex;
+    text-align: center;
+    margin: 1.5rem 0.8rem 1.5rem 0.8rem;
+    color: #fff;
+}
+.intro_mp_box .icon {
+    font-size:1.2rem;
+    margin-right: 0.5rem;
+}
+.intro_mp_box p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+.mp_card{
+width: 23rem;
+height: 20rem;
+display: flex;
+}
+
+/* todoList 부분*/
+.toDoList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.middle_mp_box{
+    display: flex;
+    padding: 0 1rem;
+}
+.middle_mp_box .todo_img{
+    width: 50%;
+    height: 7rem;
+    
+    
+}
+.middle_mp_box .todo_text{
+    width: 50%;
+    height: 7rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* todolist 입력 영역 */
+
+.todos_content{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    
+}
+.todos_content input{
+    padding: 0 2rem;
+}
+.todos_content .add_btn{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* 메모지 영역 */
+/*height 컨테이너 만들기*/
+
+.todos_ul{
+    width: 23rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+.memo_li{
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    border: 1px solid #fff;
+}
+.memo_box{
+    width: 10.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.memo_box .memo_desc{
+    width: 140px;
+    margin-left: 5px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.memo_box .delete{
+    color: #fff;
+    cursor: pointer;
+}
+
+.card_project .click_here {
+    position: relative;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.card_project .click_here::after{
+    content: "click";
+    position: absolute;
+    top: 0;left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+.card_project .click_here a{
+    color: #fff;
+}
+
+
+/* 캘린더 부분*/
+
+.intro_mp_calendar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0.8rem 0.8rem 0.8rem;
+    color: #fff;
+}
+.intro_mp_calendar .title_container{
+    display: flex;
+}
+.intro_mp_calendar .icon {
+    font-size:1.2rem;
+    margin-right: 0.5rem;
+}
+.intro_mp_calendar strong{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-right: 2rem;
+    letter-spacing: 0.2rem;
+}
+.container{
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar{
+    width: 23rem;
+    height: 20rem;  
+}
+
+.month{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.month i {
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.month h1{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.month p {
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.weekdays {
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weekdays div{
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    width: calc(22rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.1rem 0.1rem rgba(255,255,255,.1);
+}
+
+.days{
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.3rem;
+}
+.days div{
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    width: calc(22.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 0.1rem 0.1rem rgba(0,0,0,.5);
+    transition: background-color .2s;
+}
+
+.days div:hover:not(.today){
+    background-color: rgba(255,255,255,0.3);
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date{
+    opacity: 0.5;
+}
+
+.today{
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+/* footer */
+
+.ft_container{
+    margin-top: 100px;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+footer h3{}
+footer p{}
+footer span{}
+
+
+
+
+/* 미디어쿼리 */
+@media (min-width: 1200px){
+    .inner{
+        max-width: 1200px;
+    }
+}

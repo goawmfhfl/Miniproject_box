@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calendar</title>
+    <link rel="stylesheet" href="/asset/css/reset.css"/>
+    <link rel="stylesheet" href="/asset/css/style2.css"/>
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <section id="dashboard">
+        <article id="left_container">
+            <div id="calendar">
+                <div class="c_month">
+                    <i class="fas fa-arrow-left
+                    prev"></i>
+                    <div class="c_date">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                    <i class="fas fa-arrow-right
+                    next"></i>
+                </div>
+                <table class="c_table">
+                    <thead>
+                        <tr class="c_head" >
+                            <th>월요일</th>
+                            <th>화요일</th>
+                            <th>수요일</th>
+                            <th>목요일</th>
+                            <th>금요일</th>
+                            <th>토요일</th>
+                            <th>일요일</th>
+                        </tr>
+                    </thead>
+                    <tbody class="c_body"></tbody>
+                </table>
+            </div>
+            <div id="todolist">
+                <div class="input_container">
+                    <form class="add">
+                        <input type="text" name="add" placeholder="입력해주세요 !">
+                    </form>
+                    <a href="#" class="add-todo">
+                        <i class="fas fa-plus-square
+                        add_btn"></i>
+                    </a>
+                </div>
+                <div class="list_container">
+                    <ul class="todos_ul"></ul>
+                </div>
+            </div>
+        </article>
+        <article id="right_container">
+            <div class="first_box">
+                <div class="top_inner">
+                    <div class="notice_info"></div>
+                    <strong class="notice_watch">11:23:50</strong>
+                </div>
+            </div>
+            <div class="second_box">
+                <div class="middile_inner">
+                    <a href=""> <img class="notion_png" src="asset/img/sticky-notes.png"></img></a>
+                    <div class="notion_box">
+                        <strong class="update_tit">내용을 수정했습니다.</strong>
+                        <p class="update_desc">캘린더 부분과 투두리스트 부분을 합쳐보았습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="third_box">
+                <div class="bottom_inner">
+                    <strong class="weather_temp">9</strong>
+                    <p class="weather_place">seoul_korea</p>
+                </div>
+            </div>
+        </article>
+    </section>
+</div>
+    <script src="/asset/javaScript/calendar.js"></script>
+    <script src="/asset/javaScript/test_Mystyle.js"></script>
+</body>
