@@ -5,84 +5,84 @@
             "food" : "치킨",
             "name" : "BBQ",
             "fee" : "free",
-            "img": "../img/food-chicken.png"
+            "img": "../Delivery_Service/asset/img/food-chicken.png"
         },
         {
             "type" : "dessert",
             "food" : "케이크",
             "name" : "파리바게트",
             "fee" : "3000원",
-            "img": "../img/food-cake.png"
+            "img": "../Delivery_Service/asset/img/food-cake.png"
         },
         {
             "type" : "dessert",
             "food" : "커피",
             "name" : "스타벅스",
             "fee" : "3000원",
-            "img": "../img/food-coffee.png"
+            "img": "../Delivery_Service/asset/img/food-coffee.png"
         },
         {
             "type" : "japan",
             "food" : "카레",
             "name" : "아비꼬",
             "fee" : "free",
-            "img": "../img/food-curry.png"
+            "img": "../Delivery_Service/asset/img/food-curry.png"
         },
         {
             "type" : "dessert",
             "food" : "도넛",
             "name" : "던킨도넛",
             "fee" : "3000원",
-            "img": "../img/food-doughnut.png"
+            "img": "../Delivery_Service/asset/img/food-doughnut.png"
         },
         {
             "type" : "fastfood",
             "food" : "햄버거",
             "name" : "버거킹",
             "fee" : "free",
-            "img": "../img/food-hamburger.png"
+            "img": "../Delivery_Service/asset/img/food-hamburger.png"
         },
         {
             "type" : "dessert",
             "food" : "마카롱",
             "name" : "오달지다",
             "fee" : "3000원",
-            "img": "../img/food-macaron.png"
+            "img": "../Delivery_Service/asset/img/food-macaron.png"
         },
         {
             "type" : "fastfood",
             "food" : "피자",
             "name" : "도미노피자",
             "fee" : "free",
-            "img": "../img/food-pizza.png"
+            "img": "../Delivery_Service/asset/img/food-pizza.png"
         },
         {
             "type" : "japan",
             "food" : "돈까스",
             "name" : "혼카츠",
             "fee" : "free",
-            "img": "../img/food-pork.png"
+            "img": "../Delivery_Service/asset/img/food-pork.png"
         },
         {
             "type" : "japan",
             "food" : "라멘",
             "name" : "산쪼메",
             "fee" : "free",
-            "img": "../img/food-ramen.png"
+            "img": "../Delivery_Service/asset/img/food-ramen.png"
         },
         {
             "type" : "dessert",
             "food" : "샌드위치",
             "name" : "홍루이젠",
             "fee" : "3000원",
-            "img": "../img/food-sandwich.png"
+            "img": "../Delivery_Service/asset/img/food-sandwich.png"
         },
         {
             "type" : "japan",
             "food" : "스시",
             "name" : "스시로",
             "fee" : "free",
-            "img": "../img/food-sushi.png"
+            "img": "../Delivery_Service/asset/img/food-sushi.png"
         }
     ]
     

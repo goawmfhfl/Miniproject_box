@@ -255,17 +255,20 @@ body{
     display: flex;
     flex-direction: column;
 }
-.weather_temp{
+.temp_now{
     height: 7rem;
     display: block;
-    font-size: 5rem;
+    padding-top: 4rem;
+    font-size: 2rem;
     font-weight: normal;
     color: #fff;
 }
-.weather_place{
+.api_place{
     display: block;
     height: 2rem;
     color: #fff;
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
 }
 
 

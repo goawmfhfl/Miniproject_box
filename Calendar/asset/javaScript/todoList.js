@@ -1,7 +1,7 @@
-const submitForm = document.querySelector('.add'),
-toDoinput = submitForm.querySelector('input'),
-addButton = document.querySelector('.add-todo'),
-todoList = document.querySelector('.todos_ul'),
+const submitForm = document.querySelector('.add');
+const toDoinput = submitForm.querySelector('input');
+const addButton = document.querySelector('.add-todo');
+const todoList = document.querySelector('.todos_ul');
 list = document.querySelectorAll('.todos_ul li'); 
 
 let listLenght = list.length;
@@ -24,7 +24,7 @@ const cleanToDos = toDos.filter(function(data){
     //console.log("data id :",data.id)
     return data.id !== icon;
 
-});
+    });
 
    //console.log( "true값 출력 : ",cleanToDos)
 toDos = cleanToDos;
@@ -35,25 +35,24 @@ delId.remove();
 saveToDos();
 }
 
-
 function paintToDo(text){
-
     const NewId = toDos.length  + 1
-
     const html =
     `
-    <li class="memo_li" id=memo_del${NewId}>
-        <div class="memo_box">
-            <input type="checkbox" id="todo_${listLenght}">
-            <div class="memo_desc">
-                <label for="todo_${listLenght}">
-                    <span class="check"></span>
-                    ${text}
-                </label>
+    <li class="todos_li" id=memo_del${NewId}>
+        <div class="memo_container">
+            <div class="memo_box">
+                <input type="checkbox" id="todo_${listLenght}">
+                <div class="memo_desc">
+                    <label for="todo_${listLenght}">
+                        <span class="check"></span>
+                        ${text}
+                    </label>
+                </div>
+                <i class="fas fa-trash 
+                delete" onclick='deleteToDos(${NewId})'>
+                </i>
             </div>
-            <i class="fas fa-trash 
-            delete" onclick='deleteToDos(${NewId})'>
-            </i>
         </div>
     </li>
     `;
@@ -67,31 +66,29 @@ function paintToDo(text){
 }
 
 function submitHandler(event){
-event.preventDefault();
-const currentValue = toDoinput.value;
-paintToDo(currentValue);
-toDoinput.value = "";
+    event.preventDefault();
+    const currentValue = toDoinput.value;
+    paintToDo(currentValue);
+    toDoinput.value = "";
 }
 
 function loadToDos(){
 const loadedtoDos = localStorage.getItem(TODOS_LS)
     
 if(loadedtoDos !== null){
-const parsedToDos = JSON.parse(loadedtoDos);
-parsedToDos.forEach(function(todo){
-paintToDo(todo.text);
-})
+    const parsedToDos = JSON.parse(loadedtoDos);
+    parsedToDos.forEach(function(todo){
+        paintToDo(todo.text);
+        })
+    }
 }
+function init_toDoList(){
+    loadToDos();
 }
-
-function init(){
-loadToDos();
-}
-
 submitForm.addEventListener("submit",submitHandler);
 addButton.addEventListener("click",submitHandler);
 
-init();
+init_toDoList();
 
 
 

@@ -1,6 +1,6 @@
 
 function LoadJSON(){
-    return fetch('../data/data2.json')
+    return fetch("../Delivery_Service/asset/data/data.json")
     .then(respone => respone.json())
     .then(json => json.items)
 }
