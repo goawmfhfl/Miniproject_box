@@ -3,7 +3,6 @@ const $calBody = document.querySelector('.c_body');
 const $btnNext = document.querySelector('.next');
 const $btnPrev = document.querySelector('.prev');
 
-
 const init = {
     monList: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
     dayList: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
@@ -31,6 +30,7 @@ const init = {
 };
 
 
+
 //fullDate = init.today = today: new Date(), // 즉 fullDate = new Date()
 function loadYYMM(fullDate) {
     let yy = fullDate.getFullYear();
@@ -44,11 +44,11 @@ function loadYYMM(fullDate) {
     
     if (mm === init.today.getMonth() && yy === init.today.getFullYear()) {
         markToday = init.today.getDate();
+        console.log(markToday);
     }
-console.log(markToday);
 
-    document.querySelector(".c_date h1").innerHTML = yy + '년';
-    document.querySelector(".c_date p").innerHTML = new Date().toDateString();
+    document.querySelector(".c_date h1").innerHTML = yy ;
+    document.querySelector(".c_date p").innerHTML = new Date().toDateString()
 
     let trtd = '';
     let startCount;
@@ -101,10 +101,19 @@ console.log(markToday);
 loadYYMM(init.today);
 
 
-$btnNext.addEventListener('click', () => loadYYMM(init.nextMonth()));
-$btnPrev.addEventListener('click', () => loadYYMM(init.prevMonth()));
 
+$btnNext.addEventListener('click', () =>{
+    loadYYMM(init.nextMonth());
+    document.querySelector(".c_date p").innerHTML = init.nextMonth().toDateString()
+})
+$btnPrev.addEventListener('click', () => {
+    loadYYMM(init.prevMonth())
+    document.querySelector(".c_date p").innerHTML = init.prevMonth().toDateString()
+});
 
+// https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Date/toDateString
+// toDateString() 메서드는 미국 영어로 사람이 읽을 수 있는 형태로 객체의 날짜 부분을 반환합니다.
+ 
 $calBody.addEventListener('click', (e) => {
     if (e.target.classList.contains('day')) {
         if (init.activeDTag) {
