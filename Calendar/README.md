@@ -9,14 +9,14 @@
 ---
 https://user-images.githubusercontent.com/79143800/129322539-86a05307-6711-4e15-82de-d9a6dac0bb05.mov
 
-ToDoList.Md [Click Here](/Users/choejaeyeong/Desktop/Learn_Every_Day/inside_github/MiniProject_Box/Calendar/introduce/todoList.md)🔗
+ToDoList.Md [Click Here](https://github.com/goawmfhfl/Miniproject_box/blob/master/Calendar/introduce/todoList.md)🔗
 
 
 # 🗓 Calendar
 
 ---
 
-Calendar.MD [Click Here](/Users/choejaeyeong/Desktop/Learn_Every_Day/inside_github/MiniProject_Box/Calendar/introduce/Calendar.md)🔗
+Calendar.MD [Click Here](https://github.com/goawmfhfl/Miniproject_box/blob/master/Calendar/introduce/Calendar.md)🔗
 
 
 # ☀️ Weather
