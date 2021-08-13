@@ -1,6 +1,12 @@
-[화면 기록 2021-08-13 15.52.42.mov](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8adf0228-6f11-4933-ab76-aee69dac4c64/화면_기록_2021-08-13_15.52.42.mov)
 
-[화면 기록 2021-08-13 15.54.23.mov](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9e61ea74-97a5-4ddf-95c1-198ee2ea5469/화면_기록_2021-08-13_15.54.23.mov)
+
+https://user-images.githubusercontent.com/79143800/129324683-37bf686c-1947-4a54-9a54-3220580b35c4.mov
+
+
+
+https://user-images.githubusercontent.com/79143800/129324701-921878d3-93e7-4447-ac49-f1ede0294cb1.mov
+
+
 
 # ✅ TodoList
 
@@ -88,12 +94,12 @@ function loadList(){
 ## 계획
 
 > 전체적인 계획
-
-
+	
+![스크린샷 2021-08-13 16 08 45](https://user-images.githubusercontent.com/79143800/129324752-4dd03367-784b-4cb3-885b-22053894bc19.png)
 
 > 세부적인 계획
-
-
+	
+![스크린샷 2021-08-13 16 09 28](https://user-images.githubusercontent.com/79143800/129324769-4f1c05da-11a7-4606-b249-0bc81adf82ec.png)
 
 # 🛠수정부분
 
