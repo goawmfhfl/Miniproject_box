@@ -1,95 +1,90 @@
-const submitForm = document.querySelector('.add');
-const toDoinput = submitForm.querySelector('input');
-const addButton = document.querySelector('.add-todo');
-const todoList = document.querySelector('.todos_ul');
-list = document.querySelectorAll('.todos_ul li'); 
+const items = document.querySelector('.todos_ul');
+const input = document.querySelector('.todo_input');
+const addBtn = document.querySelector('.add_btn');
 
-let listLenght = list.length;
+let LS_KEY = "toDoList_key"
+let toDoList = [];
+let id = 0;
 
-TODOS_LS = "toDos_key"
-
-let toDos = [];
-
-function saveToDos(){
-    localStorage.setItem(TODOS_LS,JSON.stringify(toDos));
+// Save to Local
+function saveList(){
+    localStorage.setItem(LS_KEY,JSON.stringify(toDoList))
 }
 
-function deleteToDos(icon){
-    //console.log("icon :",icon)
-    
-
-const cleanToDos = toDos.filter(function(data){
-
-    //console.log("todos.filter (data):", data)
-    //console.log("data id :",data.id)
-    return data.id !== icon;
-
-    });
-
-   //console.log( "true값 출력 : ",cleanToDos)
-toDos = cleanToDos;
-const delId = document.getElementById(`memo_del${icon}`);
-       //console.log("delId : ",delId )
-delId.remove();
-
-saveToDos();
-}
-
-function paintToDo(text){
-    const NewId = toDos.length  + 1
-    const html =
-    `
-    <li class="todos_li" id=memo_del${NewId}>
-        <div class="memo_container">
-            <div class="memo_box">
-                <input type="checkbox" id="todo_${listLenght}">
-                <div class="memo_desc">
-                    <label for="todo_${listLenght}">
-                        <span class="check"></span>
-                        ${text}
-                    </label>
-                </div>
-                <i class="fas fa-trash 
-                delete" onclick='deleteToDos(${NewId})'>
-                </i>
-            </div>
-        </div>
-    </li>
-    `;
-    todoList.innerHTML += html;
-    const toDoOBJ = {
-        id : NewId,
-        text : text,   
+// Create Logic
+function createItem(text){
+    const itemRow = document.createElement('li');
+    itemRow.setAttribute('class','todos_li'); 
+    itemRow.setAttribute('data-id', id);
+    itemRow.innerHTML =`
+    <div class="todos">
+        <input type="checkbox" class="todos_check">
+            <span class="todos__name">${text}</span>
+            <button class="todos__delete">
+                <i class="fas fa-trash" data-id=${id}></i>
+            </button>
+    </div>
+`;
+    id++
+    items.appendChild(itemRow);
+    const toDoObj = {
+        id,
+        text
     }
-    toDos.push(toDoOBJ);
-    saveToDos(toDoOBJ);
+    toDoList.push(toDoObj)
+    saveList()
+    return itemRow;
 }
 
-function submitHandler(event){
-    event.preventDefault();
-    const currentValue = toDoinput.value;
-    paintToDo(currentValue);
-    toDoinput.value = "";
+// Input.value Logic
+function onAdd(){
+    const text = input.value;
+    if(text === ''){
+    input.focus();
+        return;
+    }
+    const item = createItem(text);
+    item.scrollIntoView({block:'center'});
+    input.value ='';
 }
 
-function loadToDos(){
-const loadedtoDos = localStorage.getItem(TODOS_LS)
-    
-if(loadedtoDos !== null){
-    const parsedToDos = JSON.parse(loadedtoDos);
-    parsedToDos.forEach(function(todo){
-        paintToDo(todo.text);
+// 새로고침 시 Load
+function loadList(){
+    const loadedList = localStorage.getItem(LS_KEY);
+    if(loadedList !== null){
+        const parsedList = JSON.parse(loadedList)
+        parsedList.forEach(function(todo){
+            createItem(todo.text);
         })
     }
 }
-function init_toDoList(){
-    loadToDos();
-}
-submitForm.addEventListener("submit",submitHandler);
-addButton.addEventListener("click",submitHandler);
 
-init_toDoList();
+// Click 추가
+addBtn.addEventListener('click',()=>{
+    onAdd();
+})
 
+// Enter 추가
+input.addEventListener('keypress',event =>{
+    if(event.key ==='Enter'){
+        onAdd();
+    }
+})
 
+// Click 제거
+items.addEventListener('click', event => {
+    const id = event.target.dataset.id;
+    if(id){
+        const ParseId = JSON.parse(id);
+        const toBeDeleted = document.querySelector(`.todos_li[data-id="${id}"]`);
+        const CleanToDos = toDoList.filter((todo)=>{
+            return todo.id !== ParseId + 1
+        })
+        toDoList = CleanToDos
+        toBeDeleted.remove();
+        saveList()
+    }
+})
 
-
+// Load
+    loadList()

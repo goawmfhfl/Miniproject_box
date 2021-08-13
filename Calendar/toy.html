@@ -6,6 +6,7 @@
     <title>calendar</title>
     <link rel="stylesheet" href="/Calendar/asset/css/reset.css"/>
     <link rel="stylesheet" href="/Calendar/asset/css/style2.css"/>
+    
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
@@ -38,20 +39,17 @@
                     <tbody class="c_body"></tbody>
                 </table>
             </div>
-            <div id="todolist">
-                <div class="input_container">
-                    <form class="add">
-                        <input type="text" name="add" placeholder="입력해주세요">
-                    </form>
-                    <a href="#" class="add-todo">
-                        <i class="fas fa-plus-square
-                        add_btn"></i>
-                    </a>
-                </div>
-                <div class="list_container">
+                    <!--todolist-->
+                    <div id="todolist">
+                    <!--input-->
+                    <div class="input_container">
+                        <input type="text" name="add" placeholder="입력해주세요" class="todo_input">
+                        <button class="todo__button">
+                            <i class="fas fa-plus-square add_btn"></i>
+                        </button>
+                    </div>
                     <ul class="todos_ul"></ul>
                 </div>
-            </div>
         </article>
         <article id="right_container">
             <div class="first_box">
