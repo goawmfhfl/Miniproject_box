@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/79143800/129324701-921878d3-93e7-4447-
 
 # 기능 설명
 
-> `Creat`
+> **`Creat`**
 
 - `` 스프링템플릿을 활용하여 동적으로 List 추가
 
@@ -36,7 +36,7 @@ itemRow.innerHTML =`
 `;
 ```
 
-> `Delete`
+> **`Delete`**
 
 - filter 메서드를 활용한 Delete 구현
 
@@ -46,7 +46,7 @@ const CleanToDos = toDoList.filter((todo)=>{
         })
 ```
 
-> `Save`
+> **`Save`**
 
 - 템플릿으로 만들어진 List 요소들 LocalStorage에 저장
 
@@ -56,7 +56,7 @@ function saveList(){
 }
 ```
 
-> `Load`
+> **`Load`**
 
 - LocalStorage에 저장된 정보를 JSON.parse를 통해서 Load
 - 새로 고침시에도 저장된 정보는 사라지지 않는다.
@@ -84,7 +84,7 @@ function loadList(){
 - 엔터 시에 리스트 업로드
 - 입력 할 경우 해당 요소로 focus
 - 아무것도 입력하지 않을 경우 로직 처리
-- <li>태그 생성 후 템플릿 리터럴을 통한 Create
+- li 태그 생성 후 템플릿 리터럴을 통한 Create
 - Delete 로직 변경
 
 # 🛠 리팩토링 진행
@@ -93,11 +93,11 @@ function loadList(){
 
 ## 계획
 
-> 전체적인 계획
+> **전체적인 계획**
 	
 ![스크린샷 2021-08-13 16 08 45](https://user-images.githubusercontent.com/79143800/129324752-4dd03367-784b-4cb3-885b-22053894bc19.png)
 
-> 세부적인 계획
+> **세부적인 계획**
 	
 ![스크린샷 2021-08-13 16 09 28](https://user-images.githubusercontent.com/79143800/129324769-4f1c05da-11a7-4606-b249-0bc81adf82ec.png)
 
@@ -105,14 +105,12 @@ function loadList(){
 
 ## HTML
 
-- <a> 태그 대신 <Button> 태그 사용
+- a 태그 대신 Button 태그 사용
 
 ## JavaScript
 
-> 추가된 부분
-
+### 추가된 부분
 - 엔터 시에 입력
-
 ```jsx
 input.addEventListener('keypress',event =>{
     if(event.key ==='Enter'){
@@ -135,9 +133,9 @@ if(text === ''){
         return;
     }
 ```
+### 수정한 부분
 
-> 수정한 부분
-- <li>태그 생성 후 템플릿 리터럴을 통한 Create
+- li 태그 생성 후 템플릿 리터럴을 통한 Create
 
 ```jsx
 		// createElement를 통한 
