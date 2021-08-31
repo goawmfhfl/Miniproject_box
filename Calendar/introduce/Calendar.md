@@ -75,7 +75,7 @@ trtd +=(markToday && markToday === countDay + 1) ? ' today" ' : '"'
 ```
 
 - 삼항연산자를 활용 load한 데이터와 카운팅 된 Day의 정보가 일치할 경우 클래스 명 today 추가
-1. 클릭할 때 마다 마크 표시
+2. 클릭할 때 마다 마크 표시
 
 ```jsx
 $calBody.addEventListener('click',(e)=>{
