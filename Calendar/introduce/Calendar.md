@@ -1,3 +1,8 @@
+
+
+https://user-images.githubusercontent.com/79143800/131494287-e93c8aab-5cb3-4131-9eb4-b988465ddac2.mov
+
+
 # ✅  Calendar
 
 
@@ -94,15 +99,11 @@ $calBody.addEventListener('click',(e)=>{
 
 > 전체적인 계획
 
-![스크린샷 2021-08-31 19.52.23.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/de479a8e-d92e-4855-b143-f48d543b727b/스크린샷_2021-08-31_19.52.23.png)
+![스크린샷 2021-08-31 19 52 23](https://user-images.githubusercontent.com/79143800/131494458-0968ea3d-e2cc-4448-a8d3-ebb73025791f.png)
 
 > 세부적인 계획
 
-![스크린샷 2021-08-31 19.51.42.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2e3d9696-216d-4acd-9801-9edff0c213df/스크린샷_2021-08-31_19.51.42.png)
-
-## JavaScript
-
----
+![스크린샷 2021-08-31 19 51 42](https://user-images.githubusercontent.com/79143800/131494477-e8de104c-23f4-4762-b2f7-b5d17232b666.png)
 
 ### 수정한 부분
 
