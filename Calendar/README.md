@@ -1,3 +1,6 @@
+
+## 🔖 [전체적인 제작 과정 보러가기 [click] >>](https://www.notion.so/131ae48ba50f44dbb9acd9f80d71a24e) 🔖
+
 # calendar
 
 **🗓 오늘의 날씨와 현재시간 그리고 할 일을 메모 할 수 있는 다재다능 캘린더 🌟**
