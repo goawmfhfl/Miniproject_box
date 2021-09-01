@@ -215,20 +215,20 @@ body{
 }
 .top_inner{
     display: flex;
-    flex-direction: column;
-}
-.notice_info{
-    height: 3.5rem;
-}
-.notice_watch{
-    display: flex;
     align-items: center;
     justify-content: center;
-    color:#fff;
-    font-size: 1.5rem;
-    height: 3.5rem;
-    line-height: 3.5rem;
-    align-items: center;
+    flex-direction: column;
+}
+.notice_title{
+    color: #EEEEEE;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+}
+.watch{
+    color:#F6C90E;
+    font-size: 2rem;
+    height: 2rem;
 }
 
 /* 오른쪽 두 번째 박스 */
@@ -284,15 +284,16 @@ body{
 }
 .weather_desc{
     font-size: 0.6rem;
-    color: #fff;
+    color: #F6C90E;
 }
 .weather_temp{
     font-size: 2rem;
     color: #fff;
+    font-weight: bold;
 }
 .weather_name{
     font-size: 0.6rem;
-    color: #fff;
+    color: #F6C90E;
 }
 .weather_right{
     width: 50%;

@@ -1,7 +1,5 @@
-const clockContainer = document.querySelector(".notice_watch");
+const clockContainer = document.querySelector(".top_inner");
 const clockTitle = clockContainer.querySelector(".watch");
-console.log(clockTitle);
-console.log(clockContainer);
 function getTime(){
     const date = new Date();
     const minutes = date.getMinutes();
