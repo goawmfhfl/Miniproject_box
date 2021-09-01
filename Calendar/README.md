@@ -33,4 +33,4 @@ Calendar.MD [Click Here](https://github.com/goawmfhfl/Miniproject_box/blob/maste
 <img width="288" alt="스크린샷 2021-09-01 21 42 15" src="https://user-images.githubusercontent.com/79143800/131680959-b2d8fd96-4437-489e-aa64-e43941575a56.png">
 
 
-Weather.MD [Click Here](/Users/choejaeyeong/Desktop/Learn_Every_Day/inside_github/MiniProject_Box/Calendar/introduce/Weather.md)🔗
+Weather.MD [Click Here](https://github.com/goawmfhfl/Miniproject_box/blob/master/Calendar/introduce/Weather.md)🔗
