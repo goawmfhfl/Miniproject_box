@@ -20,7 +20,6 @@ function loadWeather(data){
     let WeatherName = data.name; // 지역
     let WeatherIcon = data.weather[0].icon; // 아이콘
     let WeatherDesc = data.weather[0].description; // 날씨 텍스트
-    console.log(WeatherIcon)
     $WeatherTemp.textContent = `${WeatherTemp}°`;
     $WeatherName.textContent = `${WeatherName}`;
     $WeatherDesc.textContent = `${WeatherDesc}`;
@@ -48,8 +47,10 @@ function Access(position){
 function askForCoords(){
     navigator.geolocation.getCurrentPosition(Access,error);
 }
+
 function loadCoords(){
     const loadedCoords = localStorage.getItem(CooDs_Key);
+    console.log(loadedCoords);
     if(loadedCoords === null){
         askForCoords();
     }else{
