@@ -1,3 +1,4 @@
+
 # ⛅ Weather
 
 오늘의 날씨정보를 한 눈에 파악하자
@@ -51,4 +52,4 @@ function getTime(){
 
 > plan
 
-
+![스크린샷 2021-09-01 21 52 54](https://user-images.githubusercontent.com/79143800/131681754-057f325a-7424-48b9-9559-ef7dd1c21bac.png)
