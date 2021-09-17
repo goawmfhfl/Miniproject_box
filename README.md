@@ -8,7 +8,7 @@
 <div align="center"><img src="https://user-images.githubusercontent.com/79143800/129329335-e6740953-6e8b-45fd-af99-2e9c8438d7bb.png" width="700px" height="450px" alt="Calendar"></img></div>
 
 -----------------------
->## Delivery_service
+>## Trevel together
 - 업데이트 중입니다.
 [자세한 내용은 Delivery_service README.md](Delivery_Service/README.md)
 

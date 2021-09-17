@@ -1,0 +1,149 @@
+{
+    "items" : [
+        {
+            "type" : "tickets",
+            "img": "/Traveltogether/asset/img/tour/티켓-아르떼뮤지엄입장권.jpeg",
+            "title" : "[성산] 빛의벙커 모네, 르누아르..샤갈 미디어아트 전시회 성인 입장권",
+            "review" : "💬1172건의 이용후기",
+            "star" : "far fa-star",
+            "price" : "18,000원",
+            "sale" : "15,000원"
+        },
+        {
+            "type" : "guide",
+            "img": "/Traveltogether/asset/img/tour/가이드-마이리틀제주.jpeg",
+            "title" : "[제주] 제주도, 혼자라고 외로워하지 말아요",
+            "review" : "💬523건의 이용후기",
+            "star" : "fas fa-star star",
+            "price" : "25,000원",
+            "sale" : "20,000원"
+        },
+        {
+            "type" : "tickets",
+            "img": "/Traveltogether/asset/img/tour/티켓-카멜리아힐.jpeg",
+            "title" : "[안덕] 카멜리아힐 입장권",
+            "review" : "💬651건의 이용후기",
+            "star" : "fas fa-star star",
+            "price" : "8,000원",
+            "sale" : "5,200원"
+        },
+        {
+            "type" : "activity",
+            "img": "/Traveltogether/asset/img/tour/액티비티-범퍼카.jpeg",
+            "title" : "[애월] *즉시할인* 9.81 파크 이용권",
+            "review" : "💬562건의 이용후기",
+            "star" : "fas fa-star star",
+            "price" : "58,500원",
+            "sale" : "28,500원"
+        },
+        {
+            "type" : "guide",
+            "img": "/Traveltogether/asset/img/tour/가이드-벤타고서쪽.jpeg",
+            "title" : "[제주서쪽] 럭셔리 벤츠버스타고 서쪽의 여름 투어",
+            "review" : "💬150건의 이용후기",
+            "star" : "far fa-star",
+            "price" : "58,000원",
+            "sale" : "55,000원"
+        },
+        {
+            "type" : "activity",
+            "img": "/Traveltogether/asset/img/tour/액티비티-제주레일바이크.jpeg",
+            "title" : "[구좌] 제주레일바이크 이용권(용눈이오름)",
+            "review" : "💬277건의 이용후기",
+            "star" : "fas fa-star-half-alt",
+            "price" : "15,000원",
+            "sale" : "8,800원"
+        },
+        {
+            "type" : "tickets",
+            "img": "/Traveltogether/asset/img/tour/티켓-제주48시간프리패스.jpeg",
+            "title" : "[제주] 제주투어패스 48시간 프리패스권",
+            "review" : "💬258건의 이용후기",
+            "star" : "fas fa-star-half-alt",
+            "price" : "25,000원",
+            "sale" : "18,000원"
+        },
+        {
+            "type" : "activity",
+            "img": "/Traveltogether/asset/img/tour/액티비티-서핑강습.jpeg",
+            "title" : "[여름특가2] 중문색달해변 서핑 강습, 렌탈! 서퍼스제주(중문)",
+            "review" : "💬89건의 이용후기",
+            "star" : "fas fa-star star",
+            "price" : "68,000원",
+            "sale" : "60,000원"
+        },
+        {
+            "type" : "activity",
+            "img": "/Traveltogether/asset/img/tour/액티비티-해양레저.jpeg",
+            "title" : "[리뷰이벤트] 형제섬 호핑투어! 무인도에서 즐기는 프라이빗 스노쿨링!!",
+            "review" : "💬78건의 이용후기",
+            "star" : "fas fa-star-half-alt",
+            "price" : "45,000원",
+            "sale" : "38,000원"
+        },
+        {
+            "type" : "convenience",
+            "img": "/Traveltogether/asset/img/tour/여행:편의 - 여객선.jpeg",
+            "title" : "[대정] 마라도 정기 여객선 (운진항)",
+            "review" : "💬12건의 이용후기",
+            "star" : "far fa-star",
+            "price" : "9,000원",
+            "sale" : "8,500원"
+        },        
+        {
+            "type" : "guide",
+            "img": "/Traveltogether/asset/img/tour/가이드-무지개.jpeg",
+            "title" : "[제주서쪽] 제주도 서부 감성/요트/프리미엄 1일 버스투어",
+            "review" : "💬220건의 이용후기",
+            "star" : "fas fa-star-half-alt",
+            "price" : "30,000원",
+            "sale" : "27,800원"
+        },
+        {
+            "type" : "convenience",
+            "img": "/Traveltogether/asset/img/tour/여행:편의-제주공항한라산.jpeg",
+            "title" : "[픽업샌딩] 제주공항에서 한라산까지! 공항-한라산 픽업 서비스",
+            "review" : "💬13건의 이용후기",
+            "star" : "fas fa-star star",
+            "price" : "40,000원",
+            "sale" : "38,000원"
+        },
+        {
+            "type" : "convenience",
+            "img": "/Traveltogether/asset/img/tour/여행:편의-김포공항실내주차.jpeg",
+            "title" : "[서울/강서]김포공항 실내주차 할인권+무료 픽업 서비스",
+            "review" : "💬307건의 이용후기",
+            "star" : "fas fa-star star",
+            "price" : "16,000원",
+            "sale" : "15,000원"
+        },
+        {
+            "type" : "guide",
+            "img": "/Traveltogether/asset/img/tour/가이드-비밀의숲과동굴투어.jpeg",
+            "title" : "[표선] 휴식이 필요할 때, 제주 숲길 forest 투어",
+            "review" : "💬312건의 이용후기",
+            "star" : "fas fa-star star",
+            "price" : "43,000원",
+            "sale" : "40,000원"
+        },
+        {
+            "type" : "convenience",
+            "img": "/Traveltogether/asset/img/tour/여행:편의-1인탑승:짐배송.jpeg",
+            "title" : "[1인탑승+짐배송] 제주공항 및 제주 전 지역 짐 배송 서비스",
+            "review" : "💬23건의 이용후기",
+            "star" : "fas fa-star star",
+            "price" : "45,000원",
+            "sale" : "39,000원"
+        },
+        {
+            "type" : "tickets",
+            "img": "/Traveltogether/asset/img/tour/티켓-피규어뮤지엄입장권.jpeg",
+            "title" : "[안덕] 피규어뮤지엄 입장권",
+            "review" : "💬117건의 이용후기",
+            "star" : "fas fa-star-half-alt",
+            "price" : "12,000원",
+            "sale" : "8,100원"
+        }
+    ]
+    
+}
