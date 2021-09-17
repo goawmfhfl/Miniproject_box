@@ -3,13 +3,15 @@
 
 
 >## Calendar
-[자세한 내용은 Calendar README.md](https://github.com/goawmfhfl/Miniproject_box/tree/master/Calendar)
-<div align="center"><img src="https://user-images.githubusercontent.com/79143800/131680278-8aaf1c24-9dd6-41fa-bc88-5df9d7ab9bf3.png" width="700px" height="450px" alt="Calendar"></img></div>
+- [자세한 내용은 Calendar README.md](https://github.com/goawmfhfl/Miniproject_box/tree/master/Calendar)
+
+
+https://user-images.githubusercontent.com/79143800/133762505-5ecc5c68-7187-429b-bbfa-0973e3ef253e.mov
+
 
 -----------------------
 >## Trevel together
-- 업데이트 중입니다.
-[자세한 내용은 Delivery_service README.md](Delivery_Service/README.md)
+- [자세한 내용은 Traveltogether README.md](https://github.com/goawmfhfl/Miniproject_box/blob/master/Traveltogether/README.md)
 
-<div align="center"><img src="Delivery_Service/asset/img/0519 minigame.png" width="700px" height="450px" alt="Calendar"></img></div>
+https://user-images.githubusercontent.com/79143800/133761825-a8ef2e2d-5e64-4ac6-9fdd-c86d736fdbd8.mov
 
