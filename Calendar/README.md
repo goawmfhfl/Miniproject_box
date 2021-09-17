@@ -1,3 +1,6 @@
+
+## 🔖 [전체적인 제작 과정 보러가기 [click] >>](https://www.notion.so/131ae48ba50f44dbb9acd9f80d71a24e) 🔖
+
 # calendar
 
 **🗓 오늘의 날씨와 현재시간 그리고 할 일을 메모 할 수 있는 다재다능 캘린더 🌟**
@@ -27,4 +30,7 @@ Calendar.MD [Click Here](https://github.com/goawmfhfl/Miniproject_box/blob/maste
 
 ---
 
-Weather.MD [Click Here](/Users/choejaeyeong/Desktop/Learn_Every_Day/inside_github/MiniProject_Box/Calendar/introduce/Weather.md)🔗
+<img width="288" alt="스크린샷 2021-09-01 21 42 15" src="https://user-images.githubusercontent.com/79143800/131680959-b2d8fd96-4437-489e-aa64-e43941575a56.png">
+
+
+Weather.MD [Click Here](https://github.com/goawmfhfl/Miniproject_box/blob/master/Calendar/introduce/Weather.md)🔗

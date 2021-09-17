@@ -2,10 +2,9 @@
 🕹 미니프로젝트들을 모아둔 레파지토리 입니다.
 
 
-
 >## Calendar
 [자세한 내용은 Calendar README.md](https://github.com/goawmfhfl/Miniproject_box/tree/master/Calendar)
-<div align="center"><img src="https://user-images.githubusercontent.com/79143800/129329335-e6740953-6e8b-45fd-af99-2e9c8438d7bb.png" width="700px" height="450px" alt="Calendar"></img></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/79143800/131680278-8aaf1c24-9dd6-41fa-bc88-5df9d7ab9bf3.png" width="700px" height="450px" alt="Calendar"></img></div>
 
 -----------------------
 >## Trevel together
