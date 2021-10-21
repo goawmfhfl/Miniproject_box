@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://travel-together.netlify.app/sitemap.xml
