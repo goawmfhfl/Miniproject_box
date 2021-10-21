@@ -3,70 +3,88 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  let [글제목,글제목변경] = useState(['라이딩 일지','러닝 일지', '개발 일지']);
-  let [좋아요1,좋아요변경1] = useState(0);
-  let [좋아요2,좋아요변경2] = useState(0);
-  let [좋아요3,좋아요변경3] = useState(0);
-  
-  // modal state
-  let [modal,modal변경] = useState(false);
+  let [글제목, 글제목변경] = useState(['🚲라이딩 일지', '🏃🏻러닝 일지', '💻개발 일지']);
+  let [좋아요, 좋아요변경] = useState([0, 0, 0]);
 
-  // function 순서를변경(){
-  //   var newArray = [...글제목];
-  //   newArray[0] = '개발 일지';
-  //   newArray[1] = '라이딩 일지';
-  //   newArray[2] = '러닝 일지';
-  //   글제목변경(newArray);
-  // }
+  let [modal, modal변경] = useState(true);
+  let [모달제목, 모달제목변경] = useState(0)
+
+  // 입력값 저장
+  let [입력,입력변경] = useState('');
 
   return (
     <div className="App">
       <div className="black-nav">
         <div>개발 Blog</div>
       </div>
+      
+      {
+        글제목.map(function (글, i) {
+          return (
+            <div className="list" key={i}>
+              <h3 onClick={() => { 모달제목변경(i) }}>{글}
+                <span onClick={() => { 좋아요변경(좋아요[i] + 1) }}>❤️ </span>
+                {좋아요[i]}</h3>
+              <p>10월 21일 발행</p>
+              <hr />
+            </div>
+          )
+        })
+      }
+      {/* {입력} */}
 
-      <div className="list">
-        <h3>{글제목[0]}
-        <span onClick={()=>{좋아요변경1(좋아요1 + 1)}}>❤️ </span>
-        {좋아요1}</h3>
-        <p>10월 19일 발행</p>
-        <hr/>
+      <div className="publish">
+        <input onChange={(e)=>{입력변경(e.target.value)}}/>
+        <button onClick={()=>{
+          let newArray = [...글제목]
+          newArray.unshift(입력)
+          글제목변경(newArray)
+        }}>저장</button>
       </div>
+      <button onClick={() => { modal변경(!modal) }}>열고닫기</button>
 
-      <div className="list">
-        <h3>{글제목[1]}
-        <span onClick={()=>{좋아요변경2(좋아요2 + 1)}}>❤️ </span>
-        {좋아요2}</h3>
-        <p>10월 20일 발행</p>
-        <hr/>
-      </div>
+      <Profile />
 
-      <div className="list">
-      <h3>{글제목[2]}
-      <span onClick={()=>{좋아요변경3(좋아요3 + 1)}}>❤️ </span>
-      {좋아요3}</h3>
-      <p>10월 21일 발행</p>
-        <hr/>
-      </div>
-      <button onClick={()=>{modal변경(!modal)}}>열고닫기</button>
-    {
-      modal === true
-      ? <Modal></Modal>
-      : null
-    }
-
+      {
+        modal === true
+          ? <Modal 글제목={글제목} 모달제목={모달제목}></Modal>
+          : null        
+      }
     </div>
   );
 }
 
-function Modal(){
-  return(
-  <div className="modal">
-    <p>제목</p>
-    <p>날짜</p>
-    <p>내용</p>
-  </div>
+function Modal(props) {
+  return (
+    <div className="modal">
+      <p>{props.글제목[props.모달제목]}</p>
+      <p>날짜</p>
+      <p>상세내용</p>
+    </div>
   )
+}
+
+// 옛날 컴포넌트 기본 문법
+// class 변수/함수 보관하는 덩어리
+class Profile extends React.Component {
+  constructor() {
+    super()
+    this.state = { name: 'kim', age: 30 } // state
+  }
+
+  changeName = () => {
+    this.setState({ name: 'park' })
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>프로필입니다.</h3>
+        <p>저는 {this.state.name} 입니다</p>
+        <button onClick={this.changeName}>버튼</button>
+      </div>
+    )
+  }
 }
 
 export default App;
