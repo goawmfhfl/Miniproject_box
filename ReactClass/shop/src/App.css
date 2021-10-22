@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+}
+p h4{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 100px;
+  background-color: #7070717b;
+  background-image: url('/Users/choejaeyeong/Desktop/Learn_Every_Day/inside_github/MiniProject_Box/ReactClass/shop/src/background2.webp');
+  
+  background-size: cover;
+  
+}
+.main-title{
+  font-size: 60px;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px #2b1f01;
+}
+.main-desc{
+font-size:20px;
+color: aliceblue;
+text-shadow: 2px 2px 2px #2b1f01;
+}
+.col-md-4 img{
+  border: 1px solid rgba(79, 79, 79, 0.495);
+  border-radius: 7px;
+  box-shadow: 1px 3px 3px rgba(97, 96, 96, 0.276);
+}
+.card{
+  text-align: center;
+}
+.card-title{
+  font-size: 20px;
+  margin: 5px;
+}
+.card-desc{
+  font-size: 13px;
+}
+.container{
+  margin-top: 25px;
+}
+
+.btn{
+  width: 100px;
+}
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
