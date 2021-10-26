@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import { button, Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import './App.css';
 import { useState } from 'react';
-import Data from './data.js'
+import Data from './data.js';
+import Detail from './Detail.js';
 
 import { Link, Route, Switch } from 'react-router-dom';
 
@@ -19,8 +20,8 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">항공권/예매</Nav.Link>
-              <Nav.Link href="#link">숙소/숙박</Nav.Link>
+              <Nav.Link href="#home" as={Link} to ="/">Home</Nav.Link>
+              <Nav.Link href="#link" as={Link} to="/detail">Detail</Nav.Link>
               <NavDropdown title="마이페이지" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">예약확인/취소</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">나의 문의내역</NavDropdown.Item>
@@ -32,6 +33,7 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+<Switch>
       <Route exact path="/">
         <div className="main">
           <h1 className="main-title">이번 가을엔 특가 타나봐</h1>
@@ -48,27 +50,20 @@ function App() {
           </div>
         </div>
       </Route>
-      <Route path="/detail">
-      <div className="container">
-      <div className="row">
-        <div className="col-md-6">
-          <img src="https://codingapple1.github.io/shop/shoes1.jpg" width="100%" />
-        </div>
-        <div className="col-md-6 mt-4">
-          <h4 className="pt-5">상품명</h4>
-          <p>상품설명</p>
-          <p>120000원</p>
-          <button className="btn btn-danger">주문하기</button> 
-        </div>
-      </div>
-</div> 
+      <Route path="/detail/:id">
+        <Detail product={product}/>
       </Route>
-      {/* <Route path="/어쩌구" component={modal}></Route> */}
+      <Route Path="/:id">
+        <div>아무거나 적었을 때 이거 보여주셈</div>
+      </Route>
+</Switch>
 
 
     </div>
   );
 }
+
+
 function Card(props) {
   return (
     <div className="col-md-4">
