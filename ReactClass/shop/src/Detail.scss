@@ -18,6 +18,10 @@ $메인칼라 : #ff0000;
     @extend .my-alert;
     background-color: #ffe591;
 }
+.my-alert3{
+    @extend .my-alert;
+    background-color: #ffe591;
+}
 
 .my-alert p{
     margin-bottom: 0;

@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import styled from 'styled-components';
@@ -16,9 +17,13 @@ let 제목 = styled.h4`
 function Detail(props) {
 
     let [alert, alert변경] = useState(true)
-    let [inputData, inputData변경] = useState('');
 
     useEffect(()=>{
+
+        // axios.get()
+
+
+
         let 타이머 = setTimeout(()=>{
             alert변경(false)
         },2000)
@@ -33,12 +38,9 @@ function Detail(props) {
     return (
         <div className="container">
             <div className="row">
-
                 <박스>
                 <제목 className="red">Detail.js</제목>
                 </박스>
-
-                <input onChange={(e)=> {inputData변경(e.target.value)}}/>
                 {
                     alert === true
                         ? (
@@ -55,13 +57,24 @@ function Detail(props) {
                     <h4 className="pt-5">{찾은상품.title}</h4>
                     <p>{찾은상품.description}</p>
                     <p>{찾은상품.price}원</p>
-                    <button className="btn btn-danger">주문하기</button>
+                    <Info 재고={props.재고} />
+                    <button className="btn btn-danger" onClick={()=>{
+                        let newArray = [...props.재고];
+                        newArray[0] = newArray[0]-1;
+                        props.재고변경(newArray);
+                    }}>주문하기</button>
                     <button className="btn btn-danger" onClick={()=>{
                         history.push("/");
                     }}>뒤로가기</button>
                 </div>
             </div>
         </div>
+    )
+}
+
+function Info(props){
+    return(
+    <p>재고 : {props.재고[0]}</p>
     )
 }
 
