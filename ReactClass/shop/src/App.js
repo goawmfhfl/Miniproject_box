@@ -68,7 +68,7 @@ function App() {
                 })
                 .catch(() => {
                   switchChange(false)
-                  console.log('실패했어요');
+                  console.log('실패했어요') ;
                 })
             }}>더보기</button>
           </div>
