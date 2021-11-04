@@ -2,12 +2,13 @@
 import logo from './logo.svg';
 import { button, Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import './App.css';
-import { useState } from 'react';
+import React,{ useState, useContext } from 'react';
 import Data from './data.js';
 import Detail from './Detail.js';
 import axios, { Axios } from 'axios';
-
 import { Link, Route, Switch } from 'react-router-dom';
+
+import Cart from './Cart/cart'
 
 function App() {
   let [product, product변경] = useState(Data);
@@ -42,6 +43,8 @@ function App() {
             <button type="button" class="btn btn-light">자세히</button>
           </div>
           <div className="container">
+
+
             <div className="row">
               {
                 product.map((a, i) => {
@@ -49,6 +52,7 @@ function App() {
                 })
               }
             </div>
+
 
               {
                 switchOn === true
@@ -76,8 +80,8 @@ function App() {
         <Route path="/detail/:id">
           <Detail product={product} 재고={재고} 재고변경={재고변경}/>
         </Route>
-        <Route Path="/:id">
-          <div>아무거나 적었을 때 이거 보여주셈</div>
+        <Route path="/Cart">
+          <Cart/>
         </Route>
       </Switch>
 
@@ -88,6 +92,7 @@ function App() {
 
 
 function Card(props) {
+
   return (
     <div className="col-md-4">
       <img src={props.product.img} alt="소백산꽃차이야기" width="100%" />
