@@ -63,20 +63,18 @@ function Detail(props) {
                     <p>{찾은상품.description}</p>
                     <p>{찾은상품.price}원</p>
                     <Info 재고={props.재고} />
+
                     <button className="btn btn-danger" onClick={()=>{
-                        let newArray = [...props.재고];
-                        newArray[0] = newArray[0]-1;
-                        props.재고변경(newArray);
-                        props.dispatch({type:"항목추가", payload:{
-                            id:2,
-                            name:'새로운상품',
-                            quan:1
+                        props.dispatch({type:'항목추가', 데이터:{
+                            id:찾은상품.id,
+                            name:찾은상품.title,
+                            quan:찾은상품.price
                         }})
-                        history.push()
+                        history.push('/cart');
                     }}>주문하기</button>
                     <button className="btn btn-danger" onClick={()=>{
-                        history.push('/cart');
                     }}>뒤로가기</button>
+
                 </div>
             </div>
 

@@ -6,9 +6,12 @@ import React,{ useState, useContext } from 'react';
 import Data from './data.js';
 import Detail from './Detail.js';
 import axios, { Axios } from 'axios';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch, useHistory } from 'react-router-dom';
 
 import Cart from './Cart/cart'
+import toyProject  from './toyWorld/toy.js'
+// 장난감
+
 
 function App() {
   let [product, product변경] = useState(Data);
@@ -48,7 +51,7 @@ function App() {
             <div className="row">
               {
                 product.map((a, i) => {
-                  return <Card product={a} key={i} />
+                  return <Card product={a} i={i} key={i} />
                 })
               }
             </div>
@@ -56,7 +59,7 @@ function App() {
 
               {
                 switchOn === true
-                ?<div className="my-alert3">로딩중 입니다</div>
+                ?<div className="my-alert3">로딩중입니다!</div>
                 :null
               }
             
@@ -85,16 +88,20 @@ function App() {
         </Route>
       </Switch>
 
+      <Route path="/toy">
+        <toyProject/>
+      </Route>
+
 
     </div>
   );
 }
 
-
 function Card(props) {
 
+  let history = useHistory()
   return (
-    <div className="col-md-4">
+    <div className="col-md-4" onClick={()=>{history.push('/detail/'+props.product.id)}}>
       <img src={props.product.img} alt="소백산꽃차이야기" width="100%" />
       <div className="card">
         <h4 className="card-title">{props.product.title}</h4>
