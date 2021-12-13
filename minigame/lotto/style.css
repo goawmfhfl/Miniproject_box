@@ -1,0 +1,47 @@
+.basket {
+  list-style: none;
+  display: flex;
+}
+.lotto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mushine {
+  display: block;
+  background-color: black;
+  color: #ffff;
+}
+.ball {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+.ball1 {
+  background-color: aqua;
+  color: #fff;
+}
+.ball2 {
+  background-color: green;
+  color: #fff;
+}
+.ball3 {
+  background-color: black;
+  color: #fff;
+}
+.ball4 {
+  background-color: red;
+  color: #fff;
+}
+.ball5 {
+  background-color: purple;
+  color: #fff;
+}
+.ball6 {
+  background-color: peru;
+  color: #fff;
+}
