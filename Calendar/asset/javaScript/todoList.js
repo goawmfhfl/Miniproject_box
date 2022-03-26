@@ -21,11 +21,11 @@ function createItem(text){
         <input type="checkbox" class="todos_check">
             <span class="todos__name">${text}</span>
             <button class="todos__delete">
-                <i class="fas fa-trash" data-id=${id}></i>
+                <i class="fas fa-trash" data-id=${id++}></i>
             </button>
     </div>
 `;
-    id++
+    // itemRow.querySelector('.todos__name').textContent=input.value;
     items.appendChild(itemRow);
     const toDoObj = {
         id,
@@ -53,8 +53,8 @@ function loadList(){
     const loadedList = localStorage.getItem(LS_KEY);
     if(loadedList !== null){
         const parsedList = JSON.parse(loadedList)
-        parsedList.forEach(function(todo){
-            createItem(todo.text);
+        parsedList.forEach((todo)=>{
+            createItem(todo.text)
         })
     }
 }

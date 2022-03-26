@@ -12,7 +12,6 @@ function getWeather(lat,lon){
 }
 
 function loadWeather(data){
-    console.log(data);
     const $weatherTemp = document.querySelector('.weather_temp');
     const $weatherName = document.querySelector('.weather_name');
     const $weather_icon = document.querySelector('.weather_icon');
